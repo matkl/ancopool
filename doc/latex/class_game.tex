@@ -1,0 +1,105 @@
+\hypertarget{class_game}{
+\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+}
+Inheritance diagram for Game:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_a5a1c56e74aed4bcf895fa8fb86b2b3df}{
+{\bfseries Game} (\hyperlink{class_scene}{Scene} \&scene, const std::vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ \&players)}
+\label{class_game_a5a1c56e74aed4bcf895fa8fb86b2b3df}
+
+\item 
+\hypertarget{class_game_a3490c5387127e97258d88b06217237f3}{
+virtual void {\bfseries rack} ()=0}
+\label{class_game_a3490c5387127e97258d88b06217237f3}
+
+\item 
+\hypertarget{class_game_a54654f9fa83a22467ad3523374e15578}{
+virtual void {\bfseries on\_\-collision\_\-event} (Phys\_\-collision\_\-type type\_\-id, \hyperlink{class_phys__object}{Phys\_\-object} $\ast$obj1, \hyperlink{class_phys__object}{Phys\_\-object} $\ast$obj2)=0}
+\label{class_game_a54654f9fa83a22467ad3523374e15578}
+
+\item 
+\hypertarget{class_game_a7da95ca93d3c6b03a3b1c3921137200d}{
+virtual void {\bfseries on\_\-end\_\-of\_\-shot} ()=0}
+\label{class_game_a7da95ca93d3c6b03a3b1c3921137200d}
+
+\item 
+\hypertarget{class_game_a68be5d846071a80fa5e1f769b514a9df}{
+int {\bfseries get\_\-active\_\-player\_\-score} () const }
+\label{class_game_a68be5d846071a80fa5e1f769b514a9df}
+
+\item 
+\hypertarget{class_game_a776ac8259206411ffb6378c3823bd8f9}{
+void {\bfseries set\_\-active\_\-player\_\-score} (int s)}
+\label{class_game_a776ac8259206411ffb6378c3823bd8f9}
+
+\item 
+\hypertarget{class_game_a700ee8b30a3cd3ca4d1027ce64d5614a}{
+void {\bfseries next\_\-player} ()}
+\label{class_game_a700ee8b30a3cd3ca4d1027ce64d5614a}
+
+\item 
+\hypertarget{class_game_a56c0aaedc611682021175c1d513668b6}{
+int {\bfseries get\_\-num\_\-players} () const }
+\label{class_game_a56c0aaedc611682021175c1d513668b6}
+
+\item 
+\hypertarget{class_game_a0fe34b8a3e66284e3dee9a86ecf507ac}{
+std::string {\bfseries get\_\-player\_\-name} (int i) const }
+\label{class_game_a0fe34b8a3e66284e3dee9a86ecf507ac}
+
+\item 
+\hypertarget{class_game_a569afa1ac3539203e19f74bfb74ad5a1}{
+int {\bfseries get\_\-player\_\-score} (int i) const }
+\label{class_game_a569afa1ac3539203e19f74bfb74ad5a1}
+
+\item 
+\hypertarget{class_game_a48d9782639510f0aef29a17448a437b4}{
+int {\bfseries get\_\-active\_\-player\_\-num} () const }
+\label{class_game_a48d9782639510f0aef29a17448a437b4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_af73fb29b654672cc51efef4ada5748b7}{
+\hyperlink{class_table}{Table} \& {\bfseries get\_\-table} () const }
+\label{class_game_af73fb29b654672cc51efef4ada5748b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_a62066a698e793b1614c4b614a653e459}{
+\hyperlink{class_scene}{Scene} \& {\bfseries scene}}
+\label{class_game_a62066a698e793b1614c4b614a653e459}
+
+\item 
+\hypertarget{class_game_a02c9740ee200db355a248d81766870e9}{
+std::vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$ {\bfseries players}}
+\label{class_game_a02c9740ee200db355a248d81766870e9}
+
+\item 
+\hypertarget{class_game_a1e9031abb87b482fae933ae7ac432a62}{
+std::map$<$ \hyperlink{class_player}{Player} $\ast$, int $>$ {\bfseries score}}
+\label{class_game_a1e9031abb87b482fae933ae7ac432a62}
+
+\item 
+\hypertarget{class_game_a664e7d2520741d623f3edd556586eab0}{
+std::vector$<$ \hyperlink{class_player}{Player} $\ast$ $>$::iterator {\bfseries active\_\-player}}
+\label{class_game_a664e7d2520741d623f3edd556586eab0}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+game.h\item 
+game.cpp\end{DoxyCompactItemize}
