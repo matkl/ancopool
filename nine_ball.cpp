@@ -1,6 +1,7 @@
 #include "nine_ball.h"
 
 #include <cmath>
+#include <algorithm>
 #include <sstream>
 #include "scene.h"
 #include "resource_manager.h"
@@ -96,7 +97,7 @@ void Nine_ball::on_collision_event(Phys_collision_type type_id, Phys_object* obj
 			case QUAD_TYPE_NONE:
 				return;
 			case QUAD_TYPE_RAIL:
-				if (shot_summary.lowest_ball_hit && find(shot_summary.balls_hit_rail.begin(), shot_summary.balls_hit_rail.end(), ball) == shot_summary.balls_hit_rail.end()) {
+				if (shot_summary.lowest_ball_hit && std::find(shot_summary.balls_hit_rail.begin(), shot_summary.balls_hit_rail.end(), ball) == shot_summary.balls_hit_rail.end()) {
 					shot_summary.balls_hit_rail.push_back(ball);
 				}
 				break;
