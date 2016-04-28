@@ -4,7 +4,7 @@
 #include <string>
 #include <list>
 #include <map>
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 
 class Texture {
 	public:

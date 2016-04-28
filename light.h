@@ -1,7 +1,7 @@
 #ifndef LIGHT_H
 #define LIGHT_H
 
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 
 class Light {
 	public:

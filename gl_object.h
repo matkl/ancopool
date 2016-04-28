@@ -4,7 +4,7 @@
 #include "object.h"
 #include "texture.h"
 
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 
 class GL_object : public virtual Object {
 	public:
