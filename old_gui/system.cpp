@@ -1,6 +1,6 @@
 #include "system.h"
 
-#include <OpenGL/GL.h>
+#include <GL/gl.h>
 
 GUI::System::~System() {
 }
