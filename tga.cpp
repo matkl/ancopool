@@ -1,5 +1,5 @@
 #include "tga.h"
-
+#include <stdlib.h>
 
 Tga::Tga() {
 	image_data = NULL;
