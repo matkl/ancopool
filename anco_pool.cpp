@@ -8,24 +8,33 @@
 #include "phys_simulator.h"
 #include "resource_manager.h"
 #include "player_manager.h"
+
+#if 0
 #include "system.h"
 #include "default_button.h"
+#endif
 
 using std::cerr;
 using std::endl;
 
-Anco_pool::Anco_pool() : surface(0), running(false), z_near(0.01), z_far(20.0), scene(0), mode(MODE_NONE), simulation_running(false), main_menu(0), scene_sheet(0) {
+Anco_pool::Anco_pool() : surface(0), running(false), z_near(0.01), z_far(20.0), scene(0), mode(MODE_NONE), simulation_running(false)
+#if 0
+, main_menu(0), scene_sheet(0)
+#endif
+{
 }
 
 Anco_pool::~Anco_pool() {
 	if (scene)
 		delete scene;
-	
+
+#if 0	
 	if (main_menu)
 		delete main_menu;
 	
 	if (scene_sheet)
 		delete scene_sheet;
+#endif
 }
 
 Anco_pool& Anco_pool::get() {
@@ -270,8 +279,9 @@ void Anco_pool::handle_syswm_event(const SDL_SysWMEvent& syswm) {
 }
 
 void Anco_pool::handle_mouse_motion_event(const SDL_MouseMotionEvent& motion) {
+#if 0
 	GUI::System::get().inject_mouse_position(static_cast<float>(motion.x), static_cast<float>(motion.y));
-
+#endif
 
 //	CEGUI::System::getSingleton().injectMousePosition(static_cast<float>(motion.x), static_cast<float>(motion.y));
 	
@@ -464,7 +474,9 @@ void Anco_pool::display() {
 	glDisable(GL_LIGHTING);
 	glDisable(GL_DEPTH_TEST);
 
+#if 0
 	GUI::System::get().display();
+#endif
 
 
 //	CEGUI::System::getSingleton().renderGUI();
@@ -481,8 +493,10 @@ void Anco_pool::set_video_mode(int width, int height, int bpp, bool fullscreen) 
 	this->width = width;
 	this->height = height;
 
+#if 0
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 2);
+#endif 
 
 	Uint32 flags = SDL_OPENGL | SDL_RESIZABLE;
 	flags |= fullscreen ? SDL_FULLSCREEN : 0;

@@ -15,14 +15,9 @@
 
 #if 0
 #include "main_menu.h"
-#endif
-
-#if 0
 #include "scene_sheet.h"
-#endif
-
 #include "widget.h"
-
+#endif
 
 enum Mode_type {MODE_NONE, MODE_ZOOM, MODE_SHOOT, MODE_ENGLISH};
 
@@ -92,11 +87,9 @@ class Anco_pool {
 #if 0
 		Main_menu* main_menu;
 		Scene_sheet* scene_sheet;
-#endif
-
-
 		// GUI stuff
 		GUI::Widget root_widget;
+#endif
 };
 
 Uint32 Anco_pool_timer_callback(Uint32 interval, void* param);
