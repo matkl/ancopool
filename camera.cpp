@@ -1,4 +1,4 @@
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 #include "camera.h"
 
 Camera::Camera() {

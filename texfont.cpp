@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <OpenGL/glu.h>
+#include <GL/glu.h>
 #include "texfont.h"
 
 #if 0

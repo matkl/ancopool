@@ -1,7 +1,7 @@
 #ifndef TGA_H
 #define TGA_H
 
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 #include <string>
 #include <stdio.h>
 

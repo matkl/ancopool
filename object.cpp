@@ -1,6 +1,6 @@
 #include "object.h"
 
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 #include <cmath>
 
 Object::Object() {

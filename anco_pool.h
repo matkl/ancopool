@@ -12,8 +12,15 @@
 
 #include "scene.h"
 #include "fps.h"
+
+#if 0
 #include "main_menu.h"
+#endif
+
+#if 0
 #include "scene_sheet.h"
+#endif
+
 #include "widget.h"
 
 
@@ -82,9 +89,10 @@ class Anco_pool {
 
 		bool gui_active;
 
-
+#if 0
 		Main_menu* main_menu;
 		Scene_sheet* scene_sheet;
+#endif
 
 
 		// GUI stuff
