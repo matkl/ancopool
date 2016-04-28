@@ -29,7 +29,7 @@
 #ifndef OGLFT_NO_QT
 #include <qregexp.h>
 #endif
-#include <OGLFT.h>
+#include "OGLFT.h"
 
 namespace OGLFT {
 

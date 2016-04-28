@@ -2,7 +2,7 @@
 
 #include <cmath>
 #include <cstdlib>
-#include <OpenGL/glu.h>
+#include <GL/glu.h>
 
 GL_sphere::GL_sphere(double radius) : Sphere(radius), enabled(true) {
 	// Set rotation matrix to random rotation.

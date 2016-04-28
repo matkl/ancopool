@@ -32,11 +32,11 @@
 #ifdef HAVE_MPATROL
 #include <mpdebug.h>
 #endif
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
 
 #ifndef OGLFT_NO_SOLID
-#include <OpenGL/gle.h>
+#include <GL/gle.h>
 #endif
 
 #ifndef OGLFT_NO_QT

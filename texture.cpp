@@ -1,8 +1,9 @@
 #include "texture.h"
 
-#include <OpenGL/glu.h>
+#include <GL/glu.h>
 #include <libpng12/png.h>
 #include <iostream>
+#include <stdlib.h>
 #include "tga.h"
 
 //static std::list<Texture> textures;
